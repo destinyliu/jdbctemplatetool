@@ -1,12 +1,12 @@
 package org.crazycake.jdbcTemplateTool.utils;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.crazycake.jdbcTemplateTool.model.CatalogContext;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class CatalogUtils {
 	
-	private static Logger logger = LoggerFactory.getLogger(CatalogUtils.class);
+	private static Log logger = LogFactory.getLog(CatalogUtils.class);
 	
 	/**
 	 * 用于可以指定需要动态切换的库名

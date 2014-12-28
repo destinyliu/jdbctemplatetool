@@ -43,7 +43,7 @@ public class InUtils {
 				//change list to objects
 				StringBuilder sb = new StringBuilder();
 				sb.append("(");
-				ArrayList inParams = (ArrayList)p;
+				ArrayList<?> inParams = (ArrayList<?>)p;
 				for(int j=0;j<inParams.size();j++){
 					if(j!=0){
 						sb.append(",");

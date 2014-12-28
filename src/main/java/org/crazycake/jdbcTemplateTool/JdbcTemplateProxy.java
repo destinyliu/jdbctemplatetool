@@ -1,11 +1,13 @@
 package org.crazycake.jdbcTemplateTool;
 
+import static org.crazycake.jdbcTemplateTool.utils.CatalogUtils.changeCatalog;
+
 import java.util.List;
 import java.util.Map;
-import static org.crazycake.jdbcTemplateTool.utils.CatalogUtils.*;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.crazycake.jdbcTemplateTool.impl.ReturnIdPreparedStatementCreator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.BatchPreparedStatementSetter;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -17,7 +19,7 @@ public class JdbcTemplateProxy {
 	
 	private JdbcTemplate jdbcTemplate;
 
-	private Logger logger = LoggerFactory.getLogger(this.getClass());
+	private Log logger = LogFactory.getLog(this.getClass());
 	
 //	private static String changIn
 	
